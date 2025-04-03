@@ -1,0 +1,10 @@
+@import "../../styles/partials/config";
+
+.customButton {
+  background-color: $primary;
+  padding: 12px;
+  color: $white;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}

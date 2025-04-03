@@ -49,7 +49,6 @@ $desktop-width-lg: 1500px;
   }
 }
 
-
 // Desktop Mixin
 @mixin desktop {
   @media (min-width: #{$desktop-width}) {
@@ -63,7 +62,6 @@ $desktop-width-lg: 1500px;
     @content;
   }
 }
-
 
 // ----------------------------------
 // Transition Mixin
@@ -153,4 +151,10 @@ $desktop-width-lg: 1500px;
   -ms-animation: #{$str};
   -o-animation: #{$str};
   animation: #{$str};
+}
+
+@mixin flex($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
 }

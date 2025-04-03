@@ -1,3 +1,4 @@
+import Header from "@/components/layout/header";
 import "../styles/globals.scss";
 import { Inter, Poppins } from "next/font/google";
 
@@ -23,7 +24,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} ${poppins.variable}`}>
-      <body className="font-sans">{children}</body>
+      <body className="font-sans">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
